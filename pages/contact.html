@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Brightwood Academy</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Brightwood Academy</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="campus-life.html">Campus Life</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <nav class="breadcrumb">
+            <a href="../index.html">Home</a> / <span>Contact Us</span>
+        </nav>
+        <section class="contact-hero">
+            <h1>Contact Brightwood Academy</h1>
+            <p>We're here to help you!</p>
+        </section>
+        <section class="contact-section">
+            <h2>Contact Form</h2>
+            <form class="contact-form" id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="contact-feedback"></div>
+            <h2>Our Location</h2>
+            <div class="map-embed">[Google Maps Placeholder]</div>
+            <h2>Office Hours</h2>
+            <div class="office-hours">
+                <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+                <p>Saturday - Sunday: Closed</p>
+            </div>
+            <h2>Staff Directory</h2>
+            <div class="staff-directory">
+                <div class="staff-filters">
+                    <button class="staff-filter active" data-dept="all">All</button>
+                    <button class="staff-filter" data-dept="admin">Administration</button>
+                    <button class="staff-filter" data-dept="faculty">Faculty</button>
+                </div>
+                <div class="staff-list">
+                    <div class="staff-card" data-dept="admin"><h3>Dr. Sarah Johnson</h3><p>Principal</p></div>
+                    <div class="staff-card" data-dept="admin"><h3>Mr. Robert Chen</h3><p>Vice Principal</p></div>
+                    <div class="staff-card" data-dept="faculty"><h3>Ms. Emily Lee</h3><p>Math Teacher</p></div>
+                    <div class="staff-card" data-dept="faculty"><h3>Mr. David Kim</h3><p>Science Teacher</p></div>
+                </div>
+            </div>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-search">
+                <input type="text" id="faq-search-input" placeholder="Search FAQs...">
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-panel">
+                    <div class="faq-header">How do I contact the school?</div>
+                    <div class="faq-content">You can use the contact form above or call our main office.</div>
+                </div>
+                <div class="faq-panel">
+                    <div class="faq-header">Where is the school located?</div>
+                    <div class="faq-content">123 School Street, City, State 12345</div>
+                </div>
+            </div>
+            <h2>Emergency Contact</h2>
+            <div class="emergency-info">
+                <p>In case of emergency, call: (123) 456-7899</p>
+            </div>
+            <h2>Connect With Us</h2>
+            <div class="social-links-row">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+            <h2>Directions & Parking</h2>
+            <div class="directions-parking">
+                <p>Parking is available in the lot adjacent to the main entrance. See the map above for directions.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 School Street, City, State 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@brightwoodacademy.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Brightwood Academy. All rights reserved.</p>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">↑</button>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html> 

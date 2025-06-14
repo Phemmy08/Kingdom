@@ -1,0 +1,470 @@
+/* About Hero Section */
+.about-hero {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: slideInDown 1s ease;
+}
+
+.about-hero p {
+    font-size: 1.3rem;
+    color: #ffcc00;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Optional animations (if not already in your global CSS) */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Our History Timeline */
+.about-history {
+    background-color: #f4f7fc;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #003366;
+}
+
+.about-history h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    border-left: 4px solid #005599;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+
+.timeline-year {
+    position: absolute;
+    left: -75px;
+    top: 0;
+    background-color: #005599;
+    color: white;
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    transform: translateY(5px);
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .timeline {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .timeline-year {
+        position: static;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+    }
+
+    .timeline-item {
+        padding-left: 0;
+    }
+
+    .timeline-content {
+        padding-left: 0.5rem;
+    }
+}
+
+
+/* MVV Section */
+.mvv-section {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #003366;
+}
+
+.mvv-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* MVV Card Layout */
+.mvv-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.mvv-card {
+    perspective: 1000px;
+    width: 280px;
+    height: 240px;
+}
+
+.mvv-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.mvv-card:hover .mvv-card-inner {
+    transform: rotateY(180deg);
+}
+
+.mvv-card-front,
+.mvv-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #005599;
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.mvv-card-front h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.mvv-card-back {
+    background-color: #ffcc00;
+    color: #003366;
+    transform: rotateY(180deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mvv-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Leadership Section */
+.leadership-section {
+    background-color: #f4f7fc;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #003366;
+}
+
+.leadership-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.leadership-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Individual Cards */
+.leader-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.leader-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.leader-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.leader-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Accreditations & Achievements */
+.achievements-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #003366;
+}
+
+.achievements-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-block {
+    background-color: #f2f7fc;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.stat-block:hover {
+    transform: translateY(-5px);
+}
+
+.counter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #005599;
+    margin-bottom: 0.5rem;
+}
+
+.stat-block p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+/* Philosophy Section */
+.philosophy-section {
+    background-color: #f9fcff;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #003366;
+}
+
+.philosophy-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Grid Layout */
+.philosophy-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.philosophy-item {
+    background-color: #ffffff;
+    border-left: 6px solid #005599;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-6px);
+}
+
+.philosophy-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #005599;
+}
+
+.philosophy-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .philosophy-item {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .philosophy-item {
+        border-left: none;
+        border-top: 4px solid #005599;
+    }
+}
+
+
+
+/* Virtual Tour Section */
+.virtual-tour {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    color: #003366;
+}
+
+.virtual-tour h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.tour-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tour-tab {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #005599;
+    background-color: transparent;
+    color: #005599;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tour-tab.active,
+.tour-tab:hover {
+    background-color: #005599;
+    color: white;
+}
+
+.tour-content {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f7fc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .tour-tab {
+        width: 100%;
+    }
+}
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #005599;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #003366;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

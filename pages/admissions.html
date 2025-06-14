@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Brightwood Academy</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Brightwood Academy</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html" class="active">Admissions</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="campus-life.html">Campus Life</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <nav class="breadcrumb">
+            <a href="../index.html">Home</a> / <span>Admissions</span>
+        </nav>
+        <section class="admissions-hero">
+            <h1>Join Brightwood Academy</h1>
+            <p>Start your journey to excellence today!</p>
+        </section>
+        <section class="admissions-section">
+            <h2>Admission Process</h2>
+            <div class="admission-timeline">
+                <div class="admission-step"><span class="step-number">1</span>Submit Application</div>
+                <div class="admission-step"><span class="step-number">2</span>Entrance Assessment</div>
+                <div class="admission-step"><span class="step-number">3</span>Interview</div>
+                <div class="admission-step"><span class="step-number">4</span>Offer & Enrollment</div>
+            </div>
+            <h2>Eligibility Requirements</h2>
+            <div class="eligibility-cards">
+                <div class="eligibility-card"><h3>Age Criteria</h3><div class="eligibility-content">Applicants must meet age requirements for each grade level.</div></div>
+                <div class="eligibility-card"><h3>Academic Records</h3><div class="eligibility-content">Submit transcripts and report cards from previous schools.</div></div>
+                <div class="eligibility-card"><h3>Recommendations</h3><div class="eligibility-content">At least one teacher recommendation is required.</div></div>
+            </div>
+            <h2>Tuition & Fees</h2>
+            <table class="tuition-table">
+                <tr><th>Grade</th><th>Annual Tuition</th></tr>
+                <tr><td>K-5</td><td>$8,000</td></tr>
+                <tr><td>6-8</td><td>$9,000</td></tr>
+                <tr><td>9-12</td><td>$10,000</td></tr>
+            </table>
+            <div class="calculator-section">
+                <label for="tuition-calc">Calculate your tuition:</label>
+                <input type="number" id="tuition-calc" placeholder="Enter number of children">
+                <button id="calc-btn">Calculate</button>
+                <div id="calc-result"></div>
+            </div>
+            <h2>Scholarship Opportunities</h2>
+            <div class="scholarship-section">
+                <p>Brightwood Academy offers merit-based and need-based scholarships. Apply during the admissions process.</p>
+            </div>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-panel">
+                    <div class="faq-header">When is the application deadline?</div>
+                    <div class="faq-content">Applications are accepted year-round, but early application is encouraged.</div>
+                </div>
+                <div class="faq-panel">
+                    <div class="faq-header">Is financial aid available?</div>
+                    <div class="faq-content">Yes, we offer financial aid based on need and merit.</div>
+                </div>
+            </div>
+            <h2>Application Form</h2>
+            <div class="application-form-section">
+                <form id="admission-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Current School" required>
+                    <button type="submit">Submit Application</button>
+                </form>
+                <div id="form-feedback"></div>
+            </div>
+            <h2>Virtual Tour Booking</h2>
+            <div class="virtual-tour-booking">
+                <input type="date" id="tour-date">
+                <button id="book-tour">Book Tour</button>
+                <div id="tour-feedback"></div>
+            </div>
+            <h2>Contact Admissions Office</h2>
+            <div class="contact-admissions">
+                <p>Email: admissions@brightwoodacademy.edu</p>
+                <p>Phone: (123) 456-7891</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 School Street, City, State 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@brightwoodacademy.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Brightwood Academy. All rights reserved.</p>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">↑</button>
+    <script src="../js/main.js"></script>
+    <script src="../js/admissions.js"></script>
+</body>
+</html> 
