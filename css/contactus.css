@@ -1,0 +1,255 @@
+/* Contact Page Hero */
+.contact-hero {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-hero h1 {
+    font-size: 2.8rem;
+    max-width: 800px;
+    margin-bottom: 1rem;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+    background: #f9fcff;
+    color: #003366;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin: 3rem 0 1rem;
+    text-align: center;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #005599;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#contact-feedback {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Map */
+.map-embed {
+    height: 300px;
+    background-color: #ddd;
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Office Hours */
+.office-hours {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Staff Directory */
+.staff-directory {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.staff-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.staff-filter {
+    padding: 0.6rem 1rem;
+    border: 2px solid #005599;
+    background: transparent;
+    color: #005599;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.staff-filter.active,
+.staff-filter:hover {
+    background: #005599;
+    color: white;
+}
+
+.staff-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.staff-card {
+    background: #ffffff;
+    border-left: 6px solid #005599;
+    padding: 1rem;
+    width: 240px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+/* FAQ Search + Accordion */
+.faq-search {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#faq-search-input {
+    padding: 0.75rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.faq-accordion .faq-panel {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 1rem auto;
+    border-radius: 6px;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.faq-header {
+    background: #005599;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-content {
+    display: none;
+    padding: 1rem;
+    background: #f4f7fc;
+}
+
+/* Emergency Contact */
+.emergency-info {
+    background: #ffe9e9;
+    border-left: 6px solid #cc0000;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Social Links */
+.social-links-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-links-row a {
+    color: #005599;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-links-row a:hover {
+    text-decoration: underline;
+}
+
+/* Directions & Parking */
+.directions-parking {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #005599;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #003366;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+}

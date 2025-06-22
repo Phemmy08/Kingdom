@@ -1,0 +1,292 @@
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 1rem 2rem;
+    background-color: #f4f7fc;
+    font-size: 0.95rem;
+    color: #005599;
+}
+
+.breadcrumb a {
+    color: #005599;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+/* Admissions Hero Section */
+.admissions-hero {
+    background-color: #003366;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admissions-hero h1 {
+    font-size: 2.8rem;
+    max-width: 800px;
+    margin-bottom: 1rem;
+}
+
+.admissions-hero p {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admissions-hero h1 {
+        font-size: 2rem;
+    }
+
+    .admissions-hero p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* General Section */
+.admissions-section {
+    padding: 4rem 2rem;
+    background-color: #f9fcff;
+    color: #003366;
+}
+
+.admissions-section h2 {
+    font-size: 2rem;
+    margin: 3rem 0 1.5rem;
+    text-align: center;
+}
+
+/* Timeline Steps */
+.admission-timeline {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.admission-step {
+    background: #005599;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    background: #ffcc00;
+    color: #003366;
+    border-radius: 50%;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+/* Eligibility Cards */
+.eligibility-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.eligibility-card {
+    background: #fff;
+    border-left: 6px solid #005599;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+/* Tuition Table */
+.tuition-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tuition-table th, .tuition-table td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.tuition-table th {
+    background-color: #005599;
+    color: white;
+}
+
+/* Calculator */
+.calculator-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.calculator-section input,
+.calculator-section button {
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#calc-btn {
+    background: #005599;
+    color: white;
+    cursor: pointer;
+}
+
+#calc-result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Scholarship */
+.scholarship-section {
+    background: #fff5d9;
+    padding: 1.5rem;
+    border-left: 6px solid #ffcc00;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+/* FAQ Accordion */
+.faq-accordion .faq-panel {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.faq-header {
+    background: #005599;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-content {
+    display: none;
+    padding: 1rem;
+    background: #f9fcff;
+}
+
+/* Application Form */
+.application-form-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#admission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+#admission-form input,
+#admission-form button {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#admission-form button {
+    background-color: #005599;
+    color: white;
+    cursor: pointer;
+}
+
+#form-feedback {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Tour Booking */
+.virtual-tour-booking {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.virtual-tour-booking input,
+.virtual-tour-booking button {
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#book-tour {
+    background: #005599;
+    color: white;
+    cursor: pointer;
+}
+
+/* Contact Info */
+.contact-admissions {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #005599;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #003366;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+}
