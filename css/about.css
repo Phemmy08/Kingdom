@@ -433,6 +433,240 @@
 }
 
 
+/* Our Story Section */
+.our-story {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    color: #003366;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.story-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.story-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.story-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .story-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-text h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* Our Philosophy Section */
+.our-philosophy {
+    background: linear-gradient(to bottom right, #f4f7fc, #ffffff);
+    padding: 4rem 2rem;
+    color: #003366;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.philosophy-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.philosophy-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.philosophy-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.philosophy-quote {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-left: 5px solid #005599;
+    border-radius: 8px;
+    font-style: italic;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+.philosophy-quote blockquote {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.philosophy-quote span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Scroll Animation Styling */
+.animated-text,
+.animated-quote {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible,
+.animated-quote.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .philosophy-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .philosophy-quote {
+        border-left: none;
+        border-top: 4px solid #005599;
+    }
+}
+
+
+
+
+
+
+
+
+/* Core Values Section */
+.core-values {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #003366;
+}
+
+.core-values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.value-card {
+  background: #f4f7fc;
+  border-left: 6px solid #005599;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 260px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.value-card h3 {
+  color: #005599;
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+}
+
+.value-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Animation */
+.animated-value {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animated-value.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .value-card {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Back to Top Button */
 .back-to-top {
     position: fixed;

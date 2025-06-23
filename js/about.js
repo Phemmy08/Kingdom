@@ -99,6 +99,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+
+
+
+  function animateOnScroll(selector) {
+    const elements = document.querySelectorAll(selector);
+    const triggerPoint = window.innerHeight * 0.85;
+
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < triggerPoint) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', () => {
+    animateOnScroll('.animated-text');
+    animateOnScroll('.animated-quote');
+  });
+
+  window.addEventListener('load', () => {
+    animateOnScroll('.animated-text');
+    animateOnScroll('.animated-quote');
+  });
+
+
+
+
+
+
+
+
+  function animateCoreValues() {
+    const cards = document.querySelectorAll('.animated-value');
+    const triggerPoint = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+      if (card.getBoundingClientRect().top < triggerPoint) {
+        card.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateCoreValues);
+  window.addEventListener('load', animateCoreValues);
+
+
+
+
+
+
+
+
+
+
+    
     // Back to Top Button
     const backToTopButton = document.getElementById('backToTop');
     
@@ -117,3 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
