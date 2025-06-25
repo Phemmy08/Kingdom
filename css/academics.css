@@ -1,0 +1,374 @@
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 1rem 2rem;
+    background-color: #f4f7fc;
+    font-size: 0.95rem;
+    color: #005599;
+}
+
+.breadcrumb a {
+    color: #005599;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+/* Academics Hero Section */
+.academics-hero {
+    background-color: #003366;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.academics-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.academics-hero p {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .academics-hero h1 {
+        font-size: 2rem;
+    }
+
+    .academics-hero p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* Curriculum & Academics Section */
+.curriculum-academics {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  color: #003366;
+}
+
+.curriculum-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+}
+
+.curriculum-text {
+  flex: 1.5;
+}
+
+.curriculum-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.curriculum-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.curriculum-text ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.curriculum-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.curriculum-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Animation (reused from scroll-reveal setup) */
+.curriculum-text,
+.curriculum-image {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.curriculum-text.visible,
+.curriculum-image.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .curriculum-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .curriculum-text ul {
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================
+   Academics Section Styles
+========================== */
+.academics-section {
+  padding: 4rem 2rem;
+  background: #f9fcff;
+  color: #003366;
+}
+
+.academics-section h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+/* Accordion Panels (Grades & Support) */
+.grade-accordion, .support-accordion {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.grade-panel, .support-panel {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.grade-header, .support-header {
+  padding: 1rem;
+  font-weight: bold;
+  background: #005599;
+  color: white;
+  cursor: pointer;
+}
+
+.grade-content, .support-content {
+  padding: 1rem;
+  display: none;
+  background: #f4f7fc;
+}
+
+/* Curriculum Subjects */
+.subject-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.subject-card {
+  background: white;
+  border-left: 6px solid #005599;
+  padding: 1.2rem;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+/* Special Programs Section */
+.special-programs {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.special-programs h3 {
+  font-size: 1.5rem;
+  color: #005599;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #005599;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Program Image Gallery */
+.program-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.program-img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.program-img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .program-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Calendar Picker */
+.calendar-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.calendar-picker {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Activities */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activity-card {
+  background: white;
+  border-left: 6px solid #005599;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Stats & Counters */
+.achievements-section {
+  margin-top: 2rem;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.stat-block {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  text-align: center;
+  min-width: 180px;
+}
+
+.counter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #005599;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .subject-card, .program-img, .stat-block {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #005599;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #003366;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
