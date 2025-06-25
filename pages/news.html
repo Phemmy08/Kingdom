@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Events - Brightwood Academy</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/news.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+      <header>
         <nav class="navbar">
-            <div class="logo">Brightwood Academy</div>
+            <div class="logo">KLIAN</div>
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="academics.html">Academics</a></li>
                 <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="news.html" class="active">News & Events</a></li>
+                <li><a href="news.html">News & Events</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
             <div class="hamburger">
@@ -27,87 +28,125 @@
         </nav>
     </header>
     <main>
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> / <span>News & Events</span>
-        </nav>
-        <section class="news-hero">
-            <h1>Latest News & Events</h1>
-            <p>Stay up to date with what's happening at Brightwood Academy</p>
-        </section>
-        <section class="news-section">
-            <h2>Featured News</h2>
-            <div class="featured-news">
-                <div class="news-article"><img src="../assets/placeholder-news1.jpg" alt="Science Fair"><h3>Annual Science Fair</h3><p>Our students showcased their innovative projects at the annual science fair.</p></div>
-                <div class="news-article"><img src="../assets/placeholder-news2.jpg" alt="Sports Day"><h3>Sports Day</h3><p>Celebrating athletic excellence and teamwork at our sports day event.</p></div>
+        
+                <section class="news-header-section">
+            <div class="news-header-content">
+                <h1 class="news-title">Latest News & Events</h1>
+                <p class="news-subtitle">Stay up to date with what's happening at Brightwood Academy</p>
             </div>
-            <h2>Upcoming Events</h2>
-            <div class="events-calendar">
-                <div class="event-categories">
-                    <button class="event-category active" data-category="all">All</button>
-                    <button class="event-category" data-category="academic">Academic</button>
-                    <button class="event-category" data-category="sports">Sports</button>
-                    <button class="event-category" data-category="cultural">Cultural</button>
-                </div>
-                <div class="events-list">
-                    <div class="event-card"><h3>Parent-Teacher Conference</h3><p>March 15, 2024</p></div>
-                    <div class="event-card"><h3>Spring Concert</h3><p>April 10, 2024</p></div>
-                </div>
-            </div>
-            <h2>News Archive</h2>
-            <div class="news-archive">
-                <div class="featured-news">
-                    <div class="news-article"><img src="../assets/placeholder-news3.jpg" alt="Art Exhibition"><h3>Art Exhibition</h3><p>Students displayed their creative talents in our annual art show.</p></div>
-                    <div class="news-article"><img src="../assets/placeholder-news4.jpg" alt="Math Olympiad"><h3>Math Olympiad</h3><p>Brightwood students won top honors at the regional math olympiad.</p></div>
-                </div>
-                <div class="pagination">
-                    <button class="pagination-btn active">1</button>
-                    <button class="pagination-btn">2</button>
-                    <button class="pagination-btn">3</button>
-                </div>
-            </div>
-            <h2>Event Registration</h2>
-            <div class="event-registration">
-                <form id="event-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <button type="submit">Register</button>
-                </form>
-                <div id="event-feedback"></div>
-            </div>
-            <h2>Newsletter Subscription</h2>
-            <div class="newsletter-section">
-                <form id="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-                <div id="newsletter-feedback"></div>
-            </div>
-            <h2>Social Media Feed</h2>
-            <div class="social-feed">
-                <p>[Mock] Follow us on social media for more updates!</p>
-            </div>
-        </section>
+            </section>
+
+        <section class="news-events-section">
+  <!-- Featured News -->
+  <h2 class="section-title">Featured News</h2>
+  <div class="news-grid">
+    <div class="news-card">
+      <img src="../assets/placeholder-news1.jpg" alt="Science Fair" />
+      <h3>Annual Science Fair</h3>
+      <p>Our students showcased their innovative projects at the annual science fair.</p>
+    </div>
+    <div class="news-card">
+      <img src="../assets/placeholder-news2.jpg" alt="Sports Day" />
+      <h3>Sports Day</h3>
+      <p>Celebrating athletic excellence and teamwork at our sports day event.</p>
+    </div>
+  </div>
+
+  <!-- Upcoming Events -->
+  <h2 class="section-title">Upcoming Events</h2>
+  <div class="event-filter-block">
+    <div class="event-buttons">
+      <button class="event-btn active" data-category="all">All</button>
+      <button class="event-btn" data-category="academic">Academic</button>
+      <button class="event-btn" data-category="sports">Sports</button>
+      <button class="event-btn" data-category="cultural">Cultural</button>
+    </div>
+    <div class="event-list">
+      <div class="event-box"><h3>Parent-Teacher Conference</h3><p>March 15, 2024</p></div>
+      <div class="event-box"><h3>Spring Concert</h3><p>April 10, 2024</p></div>
+    </div>
+  </div>
+
+  <!-- News Archive -->
+  <h2 class="section-title">News Archive</h2>
+  <div class="archive-grid">
+    <div class="news-card">
+      <img src="../assets/placeholder-news3.jpg" alt="Art Exhibition" />
+      <h3>Art Exhibition</h3>
+      <p>Students displayed their creative talents in our annual art show.</p>
+    </div>
+    <div class="news-card">
+      <img src="../assets/placeholder-news4.jpg" alt="Math Olympiad" />
+      <h3>Math Olympiad</h3>
+      <p>Brightwood students won top honors at the regional math olympiad.</p>
+    </div>
+  </div>
+  <div class="archive-pagination">
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+  </div>
+
+  <!-- Event Registration -->
+  <h2 class="section-title">Event Registration</h2>
+  <form id="event-register-form" class="form-block">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <button type="submit">Register</button>
+  </form>
+  <div id="event-register-feedback"></div>
+
+  <!-- Newsletter -->
+  <h2 class="section-title">Newsletter Subscription</h2>
+  <form id="newsletter-form" class="form-block">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+  <div id="newsletter-feedback"></div>
+
+  <!-- Social Media Feed -->
+  <h2 class="section-title">Social Media Feed</h2>
+  <div class="social-media-feed">
+    <p>[Mock] Follow us on social media for more updates!</p>
+  </div>
+</section>
+<script>
+  function animateCurriculum() {
+    const items = document.querySelectorAll('.curriculum-text, .curriculum-image');
+    const triggerPoint = window.innerHeight * 0.85;
+
+    items.forEach(el => {
+      if (el.getBoundingClientRect().top < triggerPoint) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateCurriculum);
+  window.addEventListener('load', animateCurriculum);
+</script>
+
+
+
     </main>
-    <footer>
+      <footer class="scroll-reveal">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="academics.html">Academics</a></li>
                     <li><a href="admissions.html">Admissions</a></li>
-                    <li><a href="faculty.html">Faculty</a></li>
-                    <li><a href="campus-life.html">Campus Life</a></li>
                     <li><a href="news.html">News & Events</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p>123 School Street, City, State 12345</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Email: info@brightwoodacademy.edu</p>
+                <p>P.O. BOX 1, Agbasa, Ikere Road Ijare, Ondo State.</p>
+                <p>Phone: 08130096341</p>
+                <p>Email: klianacademy@gmail.com</p>
             </div>
             <div class="footer-section">
                 <h3>Follow Us</h3>
@@ -119,7 +158,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Brightwood Academy. All rights reserved.</p>
+            <p>&copy; 2025 Kingdom Life International Academy, Nigeria.. All rights reserved.</p>
         </div>
     </footer>
     <button class="back-to-top" id="backToTop">↑</button>

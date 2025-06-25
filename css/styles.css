@@ -321,64 +321,89 @@ header {
 }
 
 
+
 /* News & Events Section */
 .news-events {
-    background-color: #f9f9f9;
-    padding: 4rem 2rem;
-    text-align: center;
-    color: #003366;
+  padding: 4rem 2rem;
+  background-color: #f4f7fc;
+  text-align: center;
+  color: #003366;
 }
 
 .news-events h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 
-/* Slider */
+/* Slider Wrapper */
 .news-slider {
-    display: flex;
-    gap: 1.5rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-    scrollbar-width: none; /* Firefox */
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
 }
 
 .news-slider::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+  height: 8px;
+}
+.news-slider::-webkit-scrollbar-thumb {
+  background: #005599;
+  border-radius: 10px;
 }
 
+/* News Card */
 .news-item {
-    flex: 0 0 300px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    padding: 1rem;
-    scroll-snap-align: start;
-    transition: transform 0.3s ease;
+  flex: 0 0 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  scroll-snap-align: start;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .news-item:hover {
-    transform: scale(1.03);
+  transform: translateY(-5px);
 }
 
 .news-item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.news-item h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+.news-content {
+  padding: 1rem;
 }
 
-.news-item p {
-    font-size: 1rem;
-    color: #444;
+.news-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #005599;
 }
+
+.news-content p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-slider {
+    gap: 1rem;
+  }
+  .news-item {
+    flex: 0 0 85%;
+  }
+}
+
+
+
+
+
+
 
 
 /* Testimonials Section */
@@ -438,6 +463,40 @@ header {
     font-weight: bold;
     color: #005599;
 }
+
+
+/* ===== Responsive: Testimonials (Tablets & Below) ===== */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 3rem 1.5rem;
+  }
+
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-slider {
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-padding: 1rem;
+  }
+
+  .testimonial-item {
+    flex: 0 0 90%;
+    padding: 1rem;
+  }
+
+  .testimonial-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .testimonial-item cite {
+    font-size: 0.95rem;
+  }
+}
+
 
 
 
