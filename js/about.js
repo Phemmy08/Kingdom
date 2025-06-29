@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+d
   function animateCoreValues() {
     const cards = document.querySelectorAll('.animated-value');
     const triggerPoint = window.innerHeight * 0.85;
