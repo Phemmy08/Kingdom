@@ -213,6 +213,27 @@
             </section>
 
 
+<script>
+  // Reveal animations on scroll
+  function revealOnScroll() {
+    const elements = document.querySelectorAll('.animated-value');
+    const triggerBottom = window.innerHeight * 0.9;
+
+    elements.forEach(el => {
+      const boxTop = el.getBoundingClientRect().top;
+
+      if (boxTop < triggerBottom) {
+        el.classList.add('visible');
+      } else {
+        el.classList.remove('visible');
+      }
+    });
+  }
+
+  // Run on scroll and on load
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
 
 
 
